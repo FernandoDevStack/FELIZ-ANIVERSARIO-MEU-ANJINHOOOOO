@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rell="icon" href="" type="image/x-icon" />
+    <title>FELIZ ANIVERSÁRIO BEEEEEEEEEEEE🤍🤍</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", "Comic Sans MS", cursive, sans-serif;
+        color: #fff;
+        text-align: center;
+        overflow-x: hidden;
+        position: relative;
+        background: #000;
+      }
+      #fundo-imagens {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #fundo-imagens img {
+        flex: 1 0 25%;
+        height: 165px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: -25px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        opacity: 0.85;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s,
+          z-index 0.3s,
+          opacity 0.3s,
+          filter 0.3s;
+        cursor: pointer;
+        position: relative;
+      }
+      #fundo-imagens img.ativo {
+        transform: scale(1.15);
+        z-index: 3;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        opacity: 1;
+        filter: brightness(1.2);
+      }
+      #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        pointer-events: none;
+      }
+      header {
+        font-size: 2.2em;
+        text-shadow:
+          0 0 6px #ff4d6d,
+          0 0 12px #ff1e56;
+        margin-top: 30px;
+        z-index: 2;
+        position: relative;
+      }
+      #mensagem {
+        line-height: 38px;
+        font-weight: 900;
+        color: white;
+        padding: 16px;
+        max-width: 700px;
+        border-radius: 14px;
+        font-size: 1.5em;
+        min-height: 60px;
+        text-shadow: 0 0 4px #ff4d6d;
+        margin: 40px auto;
+        z-index: 2;
+        position: relative;
+        pointer-events: none;
+      }
+      #hint {
+        font-weight: 900;
+        color: white;
+        padding: 16px;
+        max-width: 700px;
+        border-radius: 14px;
+        font-size: 1.5em;
+        min-height: 60px;
+        text-shadow: 0 0 4px #ff4d6d;
+        margin: 40px auto;
+        z-index: 2;
+        position: relative;
+        pointer-events: none;
+      }
+
+      .espaco {
+        height: 70vh;
+      }
+      .espaco_buttom {
+        height: 40vh;
+      }
+      .carrossel {
+        margin: 20px auto 40px;
+        max-width: 90%;
+        overflow-x: auto;
+        display: flex;
+        gap: 50px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px;
+        z-index: 2;
+        position: relative;
+      }
+      .carrossel::-webkit-scrollbar {
+        display: none;
+      }
+      .carrossel video {
+        flex: 0 0 auto;
+        width: 320px;
+        height: 180px;
+        border-radius: 20px;
+        scroll-snap-align: center;
+        box-shadow: 0 0 15px rgba(255, 77, 109, 0.7);
+        object-fit: cover;
+        background: #000;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fundo-imagens">
+      <img src="IMG-1.jpg" alt="Foto 1" />
+      <img src="IMG-2.jpg" alt="Foto 2" />
+      <img src="IMG-3.jpg" alt="Foto 3" />
+      <img src="IMG-4.jpg" alt="Foto 4" />
+      <img src="IMG-5.jpg" alt="Foto 5" />
+      <img src="IMG-6.jpg" alt="Foto 6" />
+      <img src="IMG-7.jpg" alt="Foto 7" />
+      <img src="IMG-8.jpg" alt="Foto 8" />
+      <img src="IMG-9.jpg" alt="Foto 9" />
+      <img src="IMG-10.jpg" alt="Foto 10" />
+      <img src="IMG-11.jpg" alt="Foto 11" />
+      <img src="IMG-12.jpg" alt="Foto 12" />
+      <img src="IMG-13.jpg" alt="Foto 13" />
+    </div>
+    <div id="overlay"></div>
+    <header>🎂 FELIZ ANIVERSÁRIO MEU AMOOOOOORRRRR!!!!!! ❤️</header>
+    <div id="mensagem"></div>
+    <div class="espaco"></div>
+
+    <!-- Texto de instrução acima do carrossel -->
+    <div id="hint">Arrasta para os lados meu anjinho KKKK</div>
+
+    <section>
+      <div class="carrossel">
+        <video loop preload="metadata" poster="CAPA-1.jpg">
+          <source src="VID-1.mp4" type="video/mp4" />
+        </video>
+        <video loop preload="metadata" poster="CAPA-2.jpg">
+          <source src="VID-2.mp4" type="video/mp4" />
+        </video>
+        <video loop preload="metadata" poster="CAPA-3.jpg">
+          <source src="VID-3.mp4" type="video/mp4" />
+        </video>
+        <video loop preload="metadata" poster="CAPA-4.jpg">
+          <source src="VID-4.mp4" type="video/mp4" />
+        </video>
+        <video loop preload="metadata" poster="CAPA-5.jpg">
+          <source src="VID-5.mp4" type="video/mp4" />
+        </video>
+        <video loop preload="metadata" poster="CAPA-6.jpg">
+          <source src="VID-6.mp4" type="video/mp4" />
+        </video>
+        <video loop preload="metadata" poster="CAPA-7.jpg">
+          <source src="VID-7.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <div class="espaco_buttom"></div>
+
+    <script>
+      // Texto digitando
+      const texto =
+        "Feliz aniversááááário, meu amor kkkkkkk! Hoje é o seu dia meu anjinho kkkk. Sabia disso mb??? Kkkk. Hoje você faz 16 anos meu amor, hoje você chega em mais uma fase da sua vida, hoje você se torna mais incrível, hoje é o seu dia querida. E eu agradeço muito por fazer parte de tudo isso com você, porque cada momento com você, desde o instante em que nós nos conhecemos, foi incrível e único. Tudo em você é único beee, e foi cada detalhe seu que me fez perceber que você é a mulher da minha vida.";
+      let i = 0;
+      function digitar() {
+        if (i < texto.length) {
+          document.getElementById("mensagem").innerHTML += texto.charAt(i);
+          i++;
+          setTimeout(digitar, 62);
+        }
+      }
+      digitar();
+
+      // Música de fundo
+      const musica = new Audio("Aliança-Tribalista.mp3");
+      musica.loop = true;
+      let musicaTocando = false;
+
+      // Seleciona imagens e vídeos
+      const imagens = document.querySelectorAll("#fundo-imagens img");
+      const videos = document.querySelectorAll("video");
+
+      // Diminui em 40% o volume dos vídeos 3, 4 e 7
+      videos.forEach((video, index) => {
+        if ([2, 3, 6].includes(index)) {
+          video.volume = 0.2;
+        }
+      });
+
+      // WeakSet para não reiniciar vídeos já tocados
+      const videoPlayed = new WeakSet();
+
+      // Observador para ligar/desligar som
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              if (!video.paused) video.muted = false;
+            } else {
+              if (!video.paused) video.muted = true;
+            }
+          });
+        },
+        { threshold: 0.25 },
+      );
+
+      videos.forEach((video) => observer.observe(video));
+
+      // Evento de clique nas imagens
+      imagens.forEach((img) => {
+        img.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          imagens.forEach((i) => i.classList.remove("ativo"));
+          img.classList.add("ativo");
+
+          if (!musicaTocando) {
+            musica
+              .play()
+              .catch((err) => console.log("Erro ao iniciar música:", err));
+            musicaTocando = true;
+          }
+
+          videos.forEach((video) => {
+            if (!videoPlayed.has(video)) {
+              video.muted = true;
+              video.play().catch(() => {});
+              videoPlayed.add(video);
+            }
+          });
+        });
+      });
+
+      document.addEventListener("click", () => {
+        imagens.forEach((i) => i.classList.remove("ativo"));
+      });
+    </script>
+  </body>
+</html>
